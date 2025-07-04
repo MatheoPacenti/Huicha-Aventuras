@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap');
+@import "../styles/paleta-colores.css";
+
+:root {
+  --fuente-principal: "Lato", Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-principal);
+  font-family: var(--fuente-principal);
+  z-index: 10;
+}
+
+.header ul , li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__container {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  height: 51px;
+  object-fit: contain;
+}
+
+/* Icono hamburguesa */
+.box {
+  width: 34px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rectangle {
+  width: 34px;
+  height: 4px;
+  background-color: var(--variable-collection-naranjap);
+  border-radius: 111px;
+  box-shadow: 0 0 0 4px #786658;
+}
+
+
+.open .rectangle {
+  box-shadow: none;
+}
+
+
+.open .r1 {
+  animation: movimientoCruz 1s ease forwards;
+}
+
+/*keyframe para lograr formar la cruz*/
+
+@keyframes movimientoCruz {
+  0% {
+    transform: translateY(1px) rotate(9);
+  }
+
+  20% {
+    transform: translateY(3px) rotate(18);
+  }
+
+  60% {
+    transform: translateY(6px) rotate(27);
+  }
+
+  80% {
+    transform: translateY(9px) rotate(36);
+  }
+
+  100% {
+    transform: translateY(12px) rotate(45deg);
+  }
+}
+
+.open .r2 {
+  animation: ocultarLinea 0.5s ease forwards;
+}
+
+@keyframes ocultarLinea {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.open .r3 {
+  animation: movimientoCruzBaja 1s ease forwards;
+  stroke: none;
+  position: absolute;
+}
+
+/*keyframe para desarmar la cruz*/
+
+@keyframes movimientoCruzBaja {
+  0% {
+    transform: translateY(1px) rotate(-9);
+  }
+
+  20% {
+    transform: translateY(3px) rotate(-18);
+  }
+
+  60% {
+    transform: translateY(6px) rotate(-27);
+  }
+
+  80% {
+    transform: translateY(9px) rotate(-36);
+  }
+
+  100% {
+    transform: translateY(12px) rotate(-45deg);
+  }
+}
+
+.reverse .r1 {
+  animation: movimientoCruzReversaUno 1s ease forwards;
+  stroke: none;
+  position: absolute;
+}
+
+@keyframes movimientoCruzReversaUno {
+  0% {
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  10% {
+    transform: translateY(10.5px) rotate(40deg);
+  }
+
+  20% {
+    transform: translateY(9px) rotate(36deg);
+  }
+
+  30% {
+    transform: translateY(7.5px) rotate(32deg);
+  }
+
+  40% {
+    transform: translateY(6px) rotate(27deg);
+  }
+
+  50% {
+    transform: translateY(4.5px) rotate(22deg);
+  }
+
+  60% {
+    transform: translateY(3px) rotate(18deg);
+  }
+
+  70% {
+    transform: translateY(2px) rotate(12deg);
+  }
+
+  80% {
+    transform: translateY(1px) rotate(6deg);
+  }
+
+  90% {
+    transform: translateY(0.5px) rotate(3deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.reverse .r2 {
+  animation: mostrarLinea 0.5s ease forwards;
+}
+
+@keyframes mostrarLinea {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(11px);
+  }
+}
+
+.reverse .r3 {
+  animation: movimientoCruzReversaTres 1s ease forwards;
+  stroke: none;
+  position: absolute;
+}
+
+@keyframes movimientoCruzReversaTres {
+  0% {
+    transform: translateY(0px) rotate(-45deg);
+  }
+
+  10% {
+    transform: translateY(3px) rotate(-42deg);
+  }
+
+  20% {
+    transform: translateY(6px) rotate(-38deg);
+  }
+
+  30% {
+    transform: translateY(9px) rotate(-35deg);
+  }
+
+  40% {
+    transform: translateY(12px) rotate(-32deg);
+  }
+
+  50% {
+    transform: translateY(14px) rotate(-28deg);
+  }
+
+  60% {
+    transform: translateY(16px) rotate(-25deg);
+  }
+
+  70% {
+    transform: translateY(18px) rotate(-20deg);
+  }
+
+  80% {
+    transform: translateY(20px) rotate(-15deg);
+  }
+
+  90% {
+    transform: translateY(21px) rotate(-7deg);
+  }
+
+  100% {
+    transform: translateY(22px) rotate(0deg);
+  }
+}
+
+.desplegable {
+  width:100%;
+  height: 197px;
+  background-color: rgba(5, 5, 5, 0.7);
+}
+
+
+.desplegable .li-menu{
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+}
+.menu,
+.menu-show,
+.menu-hidden {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+.desplegable .text {
+  font-family: "Lato-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-naranjap);
+  font-size: 16px;
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu{
+  display: none;
+}
+.menu-show {
+  animation: fadeSlideDown 0.4s ease-out forwards;
+}
+.menu-hidden{
+
+  animation: fadeSlideUp 0.3s ease-in forwards;
+
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    display: none;
+    transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 1280px) {
+ .box {
+    display: none; /* Oculta menú hamburguesa */
+  }
+
+
+.menu{
+    position: static; 
+    display: flex;
+    height: 100%;
+    width: 528px;
+    margin-left: auto; 
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+  .desplegable {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    gap: 24px;
+    background: none;
+  }
+.desplegable .li-menu {
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+  }
+
+  .desplegable .text {
+    font-size: 20px;
+    color: var(--variable-collection-naranjap);
+    white-space: nowrap;
+  }
+}
