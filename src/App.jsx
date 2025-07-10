@@ -1,7 +1,8 @@
 // import Footer from './components/Footer';
-import Header from './components/Header.jsx';
-import Hero from './components/hero.jsx';
-import NuestrasActividades from './components/nuestrasActividades.jsx';
+import Hero from './components/sections/hero.jsx';
+import NuestrasActividades from './components/sections/nuestrasActividades.jsx';
+import Footer from './components/templates/footer.jsx';
+import Header from './components/templates/Header.jsx';
 // import Section1 from './components/Section1';
 // import Section2 from './components/Section2';
 import './styles/global.css';
@@ -9,11 +10,13 @@ import './styles/global.css';
 function App() {
   return (
     <>
-    <div className="main-container">
-    </div>
+    <div className="app-container">
       <Header />
       <Hero />
       <NuestrasActividades />
+      <NuestrasActividades />
+      <Footer />
+    </div>
       </>
   );
 }

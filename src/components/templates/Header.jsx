@@ -1,5 +1,8 @@
 import { useState } from "react";
+import logoSinLetras from '../../assets/img/logo-sin-letas.png';
+import "../../styles/paleta-colores.css";
 import "./Header.css";
+
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +23,7 @@ export function Header() {
       <div className="header__container main-container">
         <a href=""><img
           className="header__logo"
-          src="/img/logo-sin-letas.png"
+          src={logoSinLetras}
           alt="Logo de Huicha Cura"
           /></a>
         <div className={`${boxClass}`} onClick={menuHamburguesa}>

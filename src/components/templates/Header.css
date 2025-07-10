@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap');
-@import "../styles/paleta-colores.css";
+@import "/src/styles/paleta-colores.css";
 
 :root {
   --fuente-principal: "Lato", Helvetica, sans-serif;

@@ -1,0 +1,25 @@
+@import "/src/styles/paleta-colores.css";
+/* Estilos para la sección Nuestras Actividades */
+.nuestras-actividades-section {
+  position: relative;
+  height: 629px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  z-index: 0; /* Añadido para contexto */
+}
+  /* Estilos básicos para el título   ades-section h2 {
+      text-align: center;
+      color: #4A2B1C;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      margin-top: 0; 
+  } */
+
+
+@media (min-width: 1280px) {
+
+}

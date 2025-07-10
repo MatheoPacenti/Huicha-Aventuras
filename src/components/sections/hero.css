@@ -1,0 +1,42 @@
+@import "/src/styles/paleta-colores.css";
+.hero {
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.hero-container {
+  position: relative;
+  height: 305px;
+  overflow: hidden; /* recorta lo que se sale */
+}
+
+.hero .tiro-arco {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra vertical y horizontalmente */
+  height: auto;
+  width: 100%;
+  min-height: 100%;
+}
+
+.hero .logo {
+    position: absolute;
+    width: 235px;
+    height: 84px;
+    top: 128px; /* Posiciona el borde superior del logo al 50% de la altura del viewport */
+    left: 50%; /* Posiciona el borde izquierdo del logo al 50% del ancho del viewport */
+    transform: translate(-50%, -50%); /* Compensa el 50% del ancho y el 50% del alto del propio logo para centrarlo perfectamente */
+}
+
+@media (min-width: 1280px) {
+.hero-container {
+  height: 450px;
+}
+.hero .logo {
+    top: 223px;
+    width: 546px;
+    height: 210px;
+}
+}

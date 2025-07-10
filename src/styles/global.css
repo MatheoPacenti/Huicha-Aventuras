@@ -1,10 +1,19 @@
+@import "./paleta-colores.css";
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: var(--variable-collection-background1);
   }
-  
+  * {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
   .main-container {
     padding-left: 16px;
     padding-right: 16px;
@@ -14,4 +23,29 @@ body {
 .as{
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.app-container{
+    display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.background-sections {
+  position: absolute;
+  inset: 0; 
+  height: 100%;
+  background-image: url('/src/assets/img/nuestras-actividades-background.png');
+  /* sin esto se ve mal pero no borroso */
+  /* background-repeat: repeat-x;
+  background-position: top left; 
+  background-size: auto 629px; */
+  background-repeat: no-repeat;     
+  background-size: 100% 100%;           
+  background-position: top left;      
+  z-index: 0;
+}
+.nuestras-actividades-section {
+  height: 629px;
+}
+@media (min-width: 1280px) {
 }
