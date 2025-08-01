@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logoSinLetras from '../../assets/img/logo-sin-letas.png';
 import "../../styles/paleta-colores.css";
 import "./Header.css";
@@ -7,6 +7,17 @@ import "./Header.css";
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
+useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = "hidden"; // Bloquea scroll
+  } else {
+    document.body.style.overflow = "auto"; // Restaura scroll
+  }
+
+  return () => {
+    document.body.style.overflow = "auto"; // Limpieza por si se desmonta
+  };
+}, [isOpen]);
 
   const boxClass = !hasInteracted ? 'box' : isOpen ? "box open" : "box reverse";
   const showMenu = !hasInteracted ? 'menu' : isOpen ? 'menu-show' : 'menu-hidden';
@@ -31,7 +42,9 @@ export function Header() {
           <div className="rectangle r2"></div>
           <div className="rectangle r3"></div>
         </div>
-
+     {isOpen && (
+          <div className="menu-overlay" onClick={menuHamburguesa}></div>
+        )}
       <nav className= {`${showMenu}`}>
         <ul className="desplegable">
             <li className="li-menu"><span className="text">Nuestras Actividades</span></li>
@@ -40,8 +53,9 @@ export function Header() {
             <li className="li-menu"><span className="text">Contacto</span></li>
         </ul>
       </nav>
-      </div>
+        </div>
 
+   
     </header>
   );
 }

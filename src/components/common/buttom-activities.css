@@ -1,0 +1,49 @@
+.activity-button {
+    width: 102px;
+    height: 32px;
+    background-color: var(--variable-collection-textocolor);
+    padding: 0px 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.arqueria, .trekking{
+    padding: 0px 10px;
+}
+.btn-activity{
+    text-decoration: none;
+}
+.juegos-de-orientacion{
+    padding: 0px 7px;
+}
+    .activity-icon{
+        height: 20px;
+        width: 20px;
+    }
+
+@media (min-width: 1280px) {
+    .activity-button {
+        padding: 0px 16px;
+
+        }
+    .arqueria, .footgolf{
+    gap: 15px;
+}
+.trekking{
+    gap: 12px;
+}
+.cocina-rustica{
+    padding: 0px 6px;
+}
+    .activity-button {
+    width: 189px;
+    height: 60px;
+    }
+
+    .activity-icon{
+        height: 45px;
+        width: 45px;
+    } 
+}

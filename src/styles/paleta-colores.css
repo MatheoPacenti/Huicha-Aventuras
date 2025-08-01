@@ -7,7 +7,7 @@
     --lato-extra-bold-font-style: normal;
     --h1-lato-extrabold-font-family: "Inter", Helvetica;
     --h1-lato-extrabold-font-weight: 800;
-    --h1-lato-extrabold-font-size: 20px;
+    --h1-lato-extrabold-font-size: 28px;
     --h1-lato-extrabold-letter-spacing: 0px;
     --h1-lato-extrabold-line-height: normal;
     --h1-lato-extrabold-font-style: normal;
@@ -47,6 +47,13 @@
     --h3-lato-regular-letter-spacing: 0px;
     --h3-lato-regular-line-height: normal;
     --h3-lato-regular-font-style: normal;
+  --h2-lato-medium-font-family: "Lato", Helvetica;
+  --h2-lato-medium-font-weight: 500;
+  --h2-lato-medium-font-size: 22px;
+  --h2-lato-medium-letter-spacing: 0px;
+  --h2-lato-medium-line-height: normal;
+  --h2-lato-medium-font-style: normal;
+
     --p-lato-regular-font-family: "Lato", Helvetica;
     --p-lato-regular-font-weight: 400;
     --p-lato-regular-font-size: 16px;

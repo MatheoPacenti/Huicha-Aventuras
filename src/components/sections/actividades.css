@@ -1,0 +1,14 @@
+/* Estilos para la sección Nuestras Actividades */
+.actividades-section {
+  position: relative;
+  height: 629px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  z-index: 0; /* Añadido para contexto */
+}
+
+
+@media (min-width: 1280px) {
+
+}

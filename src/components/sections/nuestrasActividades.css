@@ -1,25 +1,190 @@
-@import "/src/styles/paleta-colores.css";
 /* Estilos para la sección Nuestras Actividades */
 .nuestras-actividades-section {
   position: relative;
-  height: 629px;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  z-index: 0; /* Añadido para contexto */
+  height: 100%;
+  background-color: var(--variable-collection-beigep);
 }
-  /* Estilos básicos para el título   ades-section h2 {
-      text-align: center;
-      color: #4A2B1C;
-      margin-bottom: 25px;
-      font-size: 1.8em;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      margin-top: 0; 
-  } */
+    .nuestras-actividades-container {
+      padding: 10px 16px 26px 16px ;
+  }
 
+.company-name {
+  margin: 10px 0 0 0;
+  font-family: var(--h1-lato-extrabold-font-family);
+  font-weight: var(--h1-lato-extrabold-font-weight);
+  color: var(--variable-collection-textocolor);
+  font-size: var(--h1-lato-extrabold-font-size);
+  text-align: center;
+  letter-spacing: var(--h1-lato-extrabold-letter-spacing);
+  line-height: var(--h1-lato-extrabold-line-height);
+  font-style: var(--h1-lato-extrabold-font-style);
+}
+
+.Text-bienvenidos {
+  margin: 5px 0 0 0;
+
+  font-family: var(--h2-lato-medium-font-family);
+  color: var(--variable-collection-textocolor);
+  font-size: var(--h2-lato-medium-font-size);
+  text-align: center;
+  line-height: var(--h2-lato-medium-line-height);
+  font-style: var(--h2-lato-medium-font-style);
+}
+
+/* ActivityButton.css */
+
+/* nuestrasActividades.css */
+.activities-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.activities-grid span {
+  color: var(--variable-collection-naranjap);
+  font-family: var(--p-lato-bold-font-family);
+  font-style: var(--p-lato-bold-font-style);
+  font-weight: var(--p-lato-bold-font-weight);
+  letter-spacing: var(--p-lato-bold-letter-spacing);
+  line-height: var(--p-lato-bold-line-height);
+  font-size: var(--p-lato-bold-font-size);
+}
+
+
+.company-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  /* espacio entre flechas e imagen */
+  margin-top: 16px;
+}
+
+/* Flechas */
+.flech-carrusel {
+  width: 22px;
+  height: 41px;
+  cursor: pointer;
+}
+
+/* Imagen central */
+
+.img-carrusel {
+  margin-bottom: 15px;
+  width: 260px;
+  height: 134px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.img-carrusel.fade {
+  opacity: 0;
+}
+
+.info-company {
+  width: 100%;
+  text-align: center;
+  font-family: var(--p-lato-regular-font-family);
+  font-weight: var(--p-lato-regular-font-weight);
+  color: var(--variable-collection-textocolor);
+  font-size: var(--p-lato-regular-font-size);
+  letter-spacing: var(--p-lato-regular-letter-spacing);
+  line-height: var(--p-lato-regular-line-height);
+  font-style: var(--p-lato-regular-font-style);
+  margin: 0px;
+}
+
+.event-groups {
+  text-align: center;
+  font-family: var(--p-lato-regular-font-family);
+    letter-spacing: var(--p-lato-regular-letter-spacing);
+  line-height: var(--p-lato-regular-line-height);
+  font-style: var(--p-lato-regular-font-style);
+  color: var(--variable-collection-textocolor);
+}
+
+.event-list {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+.logoSinLetras{
+  display: none;
+}
+.arboles {
+  position: relative;
+  width: 100%;
+  height: 0; /* evita que ocupe espacio visual */
+}
+
+.arbol .arboles {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+/* Árbol izquierdo */
+.arbol-izquierda {
+  position: absolute;
+  bottom: 0px; /* Distancia desde abajo */
+  width: 45px;
+  height: 45px;
+  left: 0;
+}
+
+/* Árbol derecho */
+.arbol-derecha {
+  bottom: 0px; /* Distancia desde abajo */
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0;
+}
 
 @media (min-width: 1280px) {
+  .arbol-derecha {
+    width: 120px;
+    height: 120px;
+  }
+  .arbol-izquierda {
+    width: 120px;
+    height: 120px;
+  }
+    .nuestras-actividades-container {
+ padding: 10px 100px 26px 100px ;
+  }
+  .logoSinLetras {
+  position: absolute;
+  bottom: 200px; /* Distancia desde abajo */
+  right: 20px;  /* Distancia desde la derecha */
+  width: 100px; /* Ajustá según tu diseño en Figma */
+  height: auto;
+  z-index: 2; /* Para que esté por encima de otros elementos si hace falta */
+}
+  .activities-grid span {
+    font-size: 18px;
+  }
 
+  .flech-carrusel {
+  width: 39px;
+  height: 72px;
+}
+
+.img-carrusel {
+  width: 455px;
+  height: 234px;
+}
+
+.logoSinLetras{
+  display: flex;
+ width: 165px;
+ height: 165px;
+}
 }

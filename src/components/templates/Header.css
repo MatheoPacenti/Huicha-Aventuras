@@ -40,6 +40,8 @@
 
 /* Icono hamburguesa */
 .box {
+  position: relative; /* o absolute/fixed si ya lo estás posicionando */
+  z-index: 11; /* mayor que el overlay y el menú */
   width: 34px;
   height: 26px;
   display: flex;
@@ -254,7 +256,15 @@
     transform: translateY(22px) rotate(0deg);
   }
 }
-
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9; 
+}
 .desplegable {
   width:100%;
   height: 197px;
@@ -272,6 +282,8 @@
 .menu,
 .menu-show,
 .menu-hidden {
+    position: fixed;
+  z-index: 10; 
   width: 100%;
   position: absolute;
   top: 80px;
@@ -298,6 +310,8 @@
   display: none;
 }
 .menu-show {
+    z-index: 10; /* o más */
+  position: fixed; /* asegurate de que esté por encima */
   animation: fadeSlideDown 0.4s ease-out forwards;
 }
 .menu-hidden{
@@ -315,6 +329,7 @@
     transform: translateY(-10px);
   }
 }
+
 
 @media (min-width: 1280px) {
  .box {

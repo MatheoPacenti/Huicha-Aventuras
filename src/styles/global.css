@@ -30,6 +30,7 @@ html, body {
   flex-direction: column;
   gap: 35px;
 }
+
 .background-sections {
   position: absolute;
   inset: 0; 
@@ -43,9 +44,6 @@ html, body {
   background-size: 100% 100%;           
   background-position: top left;      
   z-index: 0;
-}
-.nuestras-actividades-section {
-  height: 629px;
 }
 @media (min-width: 1280px) {
 }
