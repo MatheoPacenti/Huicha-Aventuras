@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { activities, formatId } from "../../components/data/activities.js";
 
 import arbolesMarrones from '../../assets/img/arbolesMarrones.png';
 import flechRight from "../../assets/img/flecha-carrusel-der.png";
@@ -7,43 +8,10 @@ import logoSinLetras from '../../assets/img/logo-sin-letas.png';
 import BtnActivities from "../common/buttom-activities.jsx";
 import "./NuestrasActividades.css";
 
-// svg
-import arco from "/src/assets/img/btn-svg-activities/archery-men.png";
-import archeryShot from "/src/assets/img/btn-svg-activities/archery-shot.png";
-import rusticKitchen from "/src/assets/img/btn-svg-activities/cocinaRustica.png";
-import football from "/src/assets/img/btn-svg-activities/football.png";
-import orientationGames from "/src/assets/img/btn-svg-activities/juegosOrientacion.png";
-import Paintball from "/src/assets/img/btn-svg-activities/Paintball.png";
-import Trekking from "/src/assets/img/btn-svg-activities/trekking-svgrepo-com.png";
-
-// img carrusel
-import archery from "../../assets/img/arqueria.png";
-import ejCarr from "../../assets/img/ejemplo.png";
-import PaintballCarr from "../../assets/img/paintball.png";
-import trekkingCarr from "../../assets/img/trekking.png";
-
 function NuestrasActividades() {
-  // Botones de actividades
-  const activities = [
-    { icon: arco, label: "Guerra con arco" },
-    { icon: archeryShot, label: "Arquería" },
-    { icon: Paintball, label: "Paintball" },
-    { icon: Trekking, label: "Trekking" },
-    { icon: rusticKitchen, label: "Cocina Rústica" },
-    { icon: orientationGames, label: "Juegos de orientación" },
-    { icon: football, label: "Footgolf" },
-  ];
-
-  const formatId = (label) =>
-    "actividad-" +
-    label
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
-
+ 
   // Carrusel
-  const carrusel = [archery, PaintballCarr, trekkingCarr, ejCarr];
+  const carrusel = activities.map((activity) => activity.img);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
   const intervalRef = useRef(null);
@@ -91,6 +59,7 @@ function NuestrasActividades() {
     return () => clearInterval(intervalRef.current);
   }, []);
 // fin carrusel
+
   return (
     <section className="nuestras-actividades-section">
       <div className="nuestras-actividades-container">

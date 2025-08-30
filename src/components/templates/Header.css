@@ -34,6 +34,8 @@
 }
 
 .header__logo {
+  position: relative;
+  z-index: 11;  
   height: 51px;
   object-fit: contain;
 }

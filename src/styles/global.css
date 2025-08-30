@@ -1,49 +1,79 @@
 @import "./paleta-colores.css";
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    background-color: var(--variable-collection-background1);
-  }
-  * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--variable-collection-background1);
+}
+
+* {
   box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-  .main-container {
-    padding-left: 16px;
-    padding-right: 16px;
-    max-width: 100%;
-  }
-  
-.as{
+.main-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 100%;
+}
+
+.as {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.app-container{
-    display: flex;
+.app-container {
+  display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
-.background-sections {
+
+.background-activities {
+  background-image: url('/src/assets/img/backgound-cards-activities.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+}
+/* .background-activities {
   position: absolute;
-  inset: 0; 
+  inset: 0;
   height: 100%;
+    min-height: 100%;
   background-image: url('/src/assets/img/nuestras-actividades-background.png');
   /* sin esto se ve mal pero no borroso */
   /* background-repeat: repeat-x;
   background-position: top left; 
   background-size: auto 629px; */
-  background-repeat: no-repeat;     
-  background-size: 100% 100%;           
-  background-position: top left;      
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
   z-index: 0;
+} */ 
+
+/* parrafo */
+.text {
+  font-family: var(--p-lato-regular-font-family);
+  font-weight: var(--p-lato-regular-font-weight);
+  color: var(--variable-collection-textocolor);
+  font-size: var(--p-lato-regular-font-size);
+  text-align: center;
+  letter-spacing: var(--p-lato-regular-letter-spacing);
+  line-height: var(--p-lato-regular-line-height);
+  font-style: var(--p-lato-regular-font-style);
 }
+
 @media (min-width: 1280px) {
+.background-activities {
+  background-image: url('/src/assets/img/nuestras-actividades-background-stroke.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+}
 }
