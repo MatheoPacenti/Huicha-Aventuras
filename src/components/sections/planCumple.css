@@ -1,0 +1,79 @@
+.cumple {
+  position: relative; /* referencia para los banderines absolutos */
+}
+.egresados-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cumple .text{
+        color: var(--variable-collection-beigep);
+}
+
+.cumple .title{
+    width: 190px;
+    height: 58px;
+}
+
+.container-actividades{
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.container-actividades img{
+    width: 121px;
+    height: 51px;
+    }
+
+.container-actividades img:first-child {
+        border-top-right-radius: 37px;   /* esquina derecha arriba */
+  border-bottom-right-radius: 37px; 
+}
+
+.container-actividades img:last-child {
+      border-top-left-radius: 37px;
+  border-bottom-left-radius: 37px;
+}
+
+.banderin-uno{
+      position: absolute;
+    left: 0 ;
+    width: 101px;
+    height: 101px;
+    margin-top: 19px;
+}
+
+.banderin-dos{
+      position: absolute;
+      top: 0;
+    right: 0;
+    width: 104px;
+    height: 116px;
+}
+
+.cumple-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.text span:last-child {
+  margin-bottom: 0;
+}
+.texto-principal{
+font-family: "Lato-Bold", Helvetica;
+font-weight: 600
+}
+
+.cumple .extra-bold{
+font-family: "Lato-ExtraBold", Helvetica;
+font-weight: 770
+}

@@ -1,0 +1,21 @@
+.planes-container{
+      display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;    /* centra elementos en móvil */
+}
+/* Desktop: ≥1280px */
+@media (min-width: 1280px) {
+  .planes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 30px;
+    justify-content: center; /* centra el grid */
+  }
+
+  /* Si hay un número impar de planes, el último ocupa toda la fila y se centra */
+  .planes-container > :last-child:nth-child(odd) {
+    grid-column: 1 / -1; /* ocupa ambas columnas */
+    justify-self: center; /* lo centra */
+  }
+}

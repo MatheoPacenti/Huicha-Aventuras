@@ -1,0 +1,72 @@
+.familia-section{
+    width: 100%;
+}
+.familia-container {
+  position: relative;
+  color: var(--variable-collection-beigep);
+}
+.familia-img {
+  position: absolute;
+  top: 85px;         /* ajusta según quieras el offset vertical */
+  right: 16px;       /* separada del borde derecho */
+  width: 120px;      /* ancho fijo para mantener proporción */
+  height: auto;      /* mantiene la proporción */
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+
+/* Texto general */
+.familia-container .text {
+  color: var(--variable-collection-beigep);
+}
+
+/* "Incluye" */
+.familia-container .incluye {
+  display: block;
+  text-align: center;
+  margin: 20px 0 10px;
+  font-family: "Lato-ExtraBold", Helvetica;
+  font-weight: 770;
+}
+
+/* Jornadas */
+.familia-container .container-jornadas {
+  margin-bottom: 18px;
+}
+
+.familia-container .jornada {
+  color: var(--variable-collection-textocolor);
+  margin-left: 16px;
+  margin-right: 10px;
+  font-family: "Lato-Bold", Helvetica;
+}
+
+.familia-container .jornada-container {
+  margin-left: -16px;
+  margin-right: -16px;
+  width: fit-content; /* ajusta al contenido */
+  height: 26px;
+  margin-bottom: 3px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--variable-collection-beigep);
+  display: flex;
+  align-items: center;
+}
+
+/* Contenido dentro de incluye alineado a la izquierda */
+.container-incluye span,
+.container-incluye p {
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1280px) {
+.familia-section{
+    width: 721px;
+}
+}

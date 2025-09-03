@@ -41,6 +41,25 @@ body {
   background-size: 100% 100%;
   background-position: top left;
 }
+.background-planes {
+  background-image: url('/src/assets/img/background-planes.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+}
+.name-plane{
+       display: block;    
+  margin: 0 auto;    
+  margin-top:35px ;
+    font-family: var(--h2-lato-extrabold-font-family);
+    font-weight: var(--h2-lato-extrabold-font-weight);
+    color: var(--variable-collection-naranjap);
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: var(--h2-lato-extrabold-letter-spacing);
+    line-height: var(--h2-lato-extrabold-line-height);
+    font-style: var(--h2-lato-extrabold-font-style);
+}
 /* .background-activities {
   position: absolute;
   inset: 0;
@@ -68,6 +87,11 @@ body {
   line-height: var(--p-lato-regular-line-height);
   font-style: var(--p-lato-regular-font-style);
 }
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
 
 @media (min-width: 1280px) {
 .background-activities {
@@ -76,4 +100,30 @@ body {
   background-size: 100% 100%;
   background-position: top left;
 }
+
+      .background {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0px 100px 0px 100px;
+    justify-content: center;
+    gap: 35px 0px;
+  }
+  /* 🔹 Si hay un número impar de cards, la última ocupa el centro */
+  .background > :last-child:nth-child(odd) {
+    grid-column: 1 / span 2;  /* hace que ocupe las 2 columnas */
+    justify-self: center;     /* centra la tarjeta */
+    width: 540px;             /* opcional, mantiene el ancho fijo */
+  }
+
+  .background-planes {
+  background-image: url('/src/assets/img/background-planes-stroke.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+  height: 416px;
+}
+
+
 }
