@@ -35,9 +35,8 @@ const scrollToSection = (sectionId) => {
   }
 };
   return (
+    
     <header className="header">
-
-
       <div className="header__container main-container">
         <a href=""><img
           className="header__logo"
