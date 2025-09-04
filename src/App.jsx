@@ -5,7 +5,7 @@ import Actividades from './components/sections/actividades';
 import Hero from './components/sections/hero';
 import NuestrasActividades from './components/sections/nuestrasActividades';
 import Planes from './components/sections/planes';
-import Footer from './components/templates/Footer';
+import Footer from './components/templates/footer';
 import Header from './components/templates/Header';
 
 function App() {

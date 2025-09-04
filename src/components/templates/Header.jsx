@@ -27,6 +27,13 @@ useEffect(() => {
     setHasInteracted(true);
   };
 
+const scrollToSection = (sectionId) => {
+  const el = document.getElementById(sectionId);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false); // Cierra el menú
+  }
+};
   return (
     <header className="header">
 
@@ -46,12 +53,39 @@ useEffect(() => {
           <div className="menu-overlay" onClick={menuHamburguesa}></div>
         )}
       <nav className= {`${showMenu}`}>
-        <ul className="desplegable">
-            <li className="li-menu"><span className="text">Nuestras Actividades</span></li>
-            <li className="li-menu"><span className="text">Quienes somos</span></li>
-            <li className="li-menu"><span className="text">Propuestas</span></li>
-            <li className="li-menu"><span className="text">Contacto</span></li>
-        </ul>
+<ul className="desplegable">
+  <li className="li-menu" onClick={() => scrollToSection("nuestras-actividades-section")}>
+    <span className="text">Nuestras Actividades</span>
+  </li>
+  <li className="li-menu" onClick={() => scrollToSection("nuestras-actividades-section")}>
+    <span className="text">Quienes somos</span>
+  </li>
+  <li className="li-menu" onClick={() => scrollToSection("nuestras-actividades-section")}>
+    <span className="text">Propuestas</span>
+  </li>
+<li
+  className="li-menu"
+  onClick={() => {
+    scrollToSection("footer");
+    const wppIcon = document.querySelector(".wpp");
+    const contactSpan = document.querySelector(".contactanos .title");
+    if (wppIcon) {
+      wppIcon.classList.add("animate-growShrink");
+      setTimeout(() => {
+        wppIcon.classList.remove("animate-growShrink");
+      }, 700);
+    }
+    if (contactSpan) {
+      contactSpan.classList.add("animate-growShrink");
+      setTimeout(() => {
+        contactSpan.classList.remove("animate-growShrink");
+      }, 700);
+    }
+  }}
+>
+  <span className="text">Contacto</span>
+</li>
+</ul>
       </nav>
         </div>
 

@@ -9,8 +9,8 @@ import "./planCumple.css";
 function PlanCumple() {
 
   return (
-    <section className="cumple background-planes">
-      <div className="cumple-container main-container">
+    <section className="main-container cumple background-planes">
+      <div className="cumple-container">
         <img className='banderin-uno' src={banderines} alt="" />
       <h3 className="title name-plane">Tu cumpleaños en Huicha</h3>
         <img className='banderin-dos' src={banderinDos} alt="" />

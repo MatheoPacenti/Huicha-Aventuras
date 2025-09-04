@@ -14,17 +14,6 @@
   overflow: hidden; /* corta lo que sobresale de las nubes/arboles */
 }
 
-/* Franja superior bordó como en el mockup */
-.footer::before{
-  content: "";
-  position: absolute;
-  left: 0; top: 0;
-  width: 100%;
-  height: 12px;
-  background: #7a2c24; /* bordó */
-}
-
-/* --- Columna izquierda: textos e íconos --- */
 .footer-container{ z-index: 2; } /* por encima de las nubes */
 
 .contactanos .title{
@@ -52,6 +41,7 @@
   margin-top: 12px;
   display: flex;
   align-items: center;
+   justify-content: space-between;
   gap: 18px;
 }
 
@@ -71,12 +61,14 @@
 }
 
 .logo-huicha {
-    margin-top: 20px;
-    margin-right: 20px;
+  position: absolute;
+  top: 18px;
+  right: -6px;
   width: 100%;
-  max-width: 562px;   /* tamaño máximo en desktop */
-  height: 66px;
+width: 202px; height: 66px;
   display: block;
+  margin: 0;
+  z-index: 3;
 }
 
 /* Elementos decorativos en la esquina inferior derecha */
@@ -99,24 +91,64 @@
   transition: transform .15s ease;
 }
 .svg-redes a:active{ transform: scale(.96); }
-
-/* --- Responsive simple (opcional) --- */
-@media (min-width: 1280px) {
-
-    .arboles-marrones{
+  .contactanos{
+      width: auto;
+    }
+    .contactanos{
         display: flex;
+  flex-direction: column;
+    }
+    
+.animate-growShrink {
+  animation: growShrink 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes growShrink {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.08); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+    /* --- Responsive simple (opcional) --- */
+/* ...existing code... */
+@media (min-width: 768px) {
+  .arboles-marrones {
+    display: flex;
+    height: 103px;
+    width: 103px;
     position: absolute;
-    right: 105px;           /* adelantado respecto a las nubes */
+    right: 229px;
+    bottom: 0;
+  }
+  .logo-huicha { width: 304px; height: auto; }
+}
+
+/* Mueve este bloque después del anterior */
+@media (min-width: 1280px) {
+  .footer{
+    height: 300px;
+    padding: 18px 100px 18px;
+  }
+  .arboles-marrones {
+    display: flex;
+    position: absolute;
+    right: 105px;
     bottom: 0;
     width: 102px;
     height: auto;
-    }
+  }
+  .nubes{ width: 220px; }
+  .logo-huicha { width: 562px; height: auto; }
+  .arboles-marrones{ right: 435px;}
+  .contactanos{
+  gap: 5px;
+  width: auto;
+  }
+
 }
-@media (max-width: 720px){
-  .logo-huicha{ width: 420px; }
-}
+/* ...existing code... */
 @media (max-width: 480px){
-  .footer{ padding: 16px 16px 20px; }
+  .footer{ padding: 15px 16px; }
   .contactanos .title{ font-size: 28px; }
   .contactanos .dato{ font-size: 18px; }
   .logo-huicha{ width: 202px; height: 66px; }

@@ -15,12 +15,14 @@
     height: 58px;
 }
 
-.container-actividades{
+.container-actividades {
   display: flex;
   flex-direction: row;
-    justify-content: space-between;
-  margin-left: -16px;
-  margin-right: -16px;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  right: 0;
+  /* No agregues padding aquí */
 }
 
 .container-actividades img{
@@ -29,11 +31,15 @@
     }
 
 .container-actividades img:first-child {
+    margin-left: -16px; /* Compensa el padding del main-container */
+
         border-top-right-radius: 37px;   /* esquina derecha arriba */
   border-bottom-right-radius: 37px; 
 }
 
 .container-actividades img:last-child {
+    margin-right: -16px; /* Compensa el padding del main-container */
+
       border-top-left-radius: 37px;
   border-bottom-left-radius: 37px;
 }
@@ -41,6 +47,7 @@
 .banderin-uno{
       position: absolute;
     left: 0 ;
+    top: -3px;
     width: 101px;
     height: 101px;
     margin-top: 19px;

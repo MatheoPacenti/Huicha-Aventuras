@@ -61,7 +61,7 @@ function NuestrasActividades() {
 // fin carrusel
 
   return (
-    <section className="nuestras-actividades-section">
+    <section id="nuestras-actividades-section" className="nuestras-actividades-section">
       <div className="nuestras-actividades-container">
         <h1 className="company-name">Huicha Aventuras</h1>
         <h2 className="Text-bienvenidos">
