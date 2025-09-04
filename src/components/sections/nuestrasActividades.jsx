@@ -6,7 +6,7 @@ import flechRight from "../../assets/img/flecha-carrusel-der.png";
 import flechLeft from "../../assets/img/flecha-carrusel-izq.png";
 import logoSinLetras from '../../assets/img/logo-sin-letas.png';
 import BtnActivities from "../common/buttom-activities.jsx";
-import "./NuestrasActividades.css";
+import "./nuestrasActividades.css";
 
 function NuestrasActividades() {
  
