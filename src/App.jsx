@@ -7,6 +7,7 @@ import NuestrasActividades from './components/sections/nuestrasActividades';
 import Planes from './components/sections/planes';
 import Footer from './components/templates/footer';
 import Header from './components/templates/Header';
+//soy salame e importo todo mal
 
 function App() {
   return (
