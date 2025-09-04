@@ -1,3 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap');
-
 @import "/src/styles/paleta-colores.css";
+
+/* --- Layout base --- */
+.footer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px 16px 22px;
+  background-color: var(--variable-collection-background-footer);
+  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  overflow: hidden; /* corta lo que sobresale de las nubes/arboles */
+}
+
+/* Franja superior bordó como en el mockup */
+.footer::before{
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 12px;
+  background: #7a2c24; /* bordó */
+}
+
+/* --- Columna izquierda: textos e íconos --- */
+.footer-container{ z-index: 2; } /* por encima de las nubes */
+
+.contactanos .title{
+  display: block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 32px;           /* ajusta si necesitás más grande */
+  line-height: 1.05;
+  margin: 6px 0 10px;
+}
+
+.contactanos .dato{
+  margin: 8px 0;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--variable-collection-blanco-transparencia);            /* gris como en la imagen */
+}
+
+.link-plano{
+  color: inherit;
+  text-decoration: none;
+}
+
+.svg-redes{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Tamaños exactos de los SVG según tu código */
+.facebook{  width: 42px; height: 43px; display: block; }
+.instagram{ width: 42px; height: 47px; display: block; }
+.wpp{       width: 45px; height: 45px; display: block; }
+
+/* --- Bloque derecho: logo + decoraciones --- */
+.huicha-aventuras{
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 6px;
+  z-index: 1;
+}
+
+.logo-huicha {
+    margin-top: 20px;
+    margin-right: 20px;
+  width: 100%;
+  max-width: 562px;   /* tamaño máximo en desktop */
+  height: 66px;
+  display: block;
+}
+
+/* Elementos decorativos en la esquina inferior derecha */
+.nubes{
+  position: absolute;
+  right: -8px;
+  bottom: -6px;
+  width: 219px;
+  height: auto;
+}
+
+.arboles-marrones{
+
+  display: none;
+}
+
+/* --- Toques finos / estados --- */
+.svg-redes a{
+  display: inline-flex;
+  transition: transform .15s ease;
+}
+.svg-redes a:active{ transform: scale(.96); }
+
+/* --- Responsive simple (opcional) --- */
+@media (min-width: 1280px) {
+
+    .arboles-marrones{
+        display: flex;
+    position: absolute;
+    right: 105px;           /* adelantado respecto a las nubes */
+    bottom: 0;
+    width: 102px;
+    height: auto;
+    }
+}
+@media (max-width: 720px){
+  .logo-huicha{ width: 420px; }
+}
+@media (max-width: 480px){
+  .footer{ padding: 16px 16px 20px; }
+  .contactanos .title{ font-size: 28px; }
+  .contactanos .dato{ font-size: 18px; }
+  .logo-huicha{ width: 202px; height: 66px; }
+  .nubes{ width: 180px; }
+  .arboles-marrones{ right: 78px; width: 90px; }
+
+}

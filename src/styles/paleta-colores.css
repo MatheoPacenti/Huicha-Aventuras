@@ -87,6 +87,7 @@
     --variable-collection-naranja3: rgba(255, 172, 74, 1);
     --variable-collection-naranja4: rgba(253, 176, 86, 1);
     --variable-collection-naranja5: rgba(255, 186, 104, 1);
+
     --variable-collection-grisp: rgba(63, 63, 63, 1);
     --variable-collection-gris2: rgba(89, 86, 86, 1);
     --variable-collection-gris3: rgba(119, 116, 116, 1);
@@ -95,4 +96,6 @@
     --variable-collection-textocolor: rgba(62, 31, 20, 1);
     --variable-collection-background1: rgba(112, 50, 34, 1);
     --variable-collection-blanco-transparencia: rgba(255, 255, 255, 0.6);
+    --variable-collection-background-footer: rgba(32, 32, 32, 1);
+
 }
