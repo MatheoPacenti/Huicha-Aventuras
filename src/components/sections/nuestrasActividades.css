@@ -186,6 +186,8 @@
   display: flex;
  width: 165px;
  height: 165px;
+ top: 290px;
+  right: 84px;
 }
 
 /* Contenido SEO oculto */
@@ -196,9 +198,5 @@
   height: 1px;
   overflow: hidden;
   /* Contenido SEO oculto para motores de búsqueda pero accesible */
-}
-
-.seo-content {
-  /* Contenido SEO visible pero optimizado */
 }
 }
