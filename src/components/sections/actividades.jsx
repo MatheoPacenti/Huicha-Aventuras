@@ -52,8 +52,22 @@ function Actividades() {
     if (!selectedSlug) return;
     const t = setTimeout(() => {
       const el = document.getElementById(selectedSlug);
-      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 0);
+      if (el) {
+        const headerHeight = 20; // Altura del header normal
+        const windowHeight = window.innerHeight;
+        const elementHeight = el.offsetHeight;
+        const elementPosition = el.offsetTop;
+        
+        // Calcular posición para centrar la card en la pantalla
+        const centerPosition = elementPosition - (windowHeight - elementHeight) / 2;
+        const offsetPosition = Math.max(centerPosition - headerHeight, 0);
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 100); // Aumentar el delay para asegurar que el DOM esté actualizado
     return () => clearTimeout(t);
   }, [selectedSlug, activitiesToShow]);
 
@@ -84,7 +98,7 @@ function Actividades() {
 
         <div className="ver-mas-container">
           <button className="ver-mas-btn text" onClick={handleToggleShowAll}>
-            {showAll ? "Ver menos" : "ver todas las actividades"}
+            {showAll ? "Ver menos" : "Ver todas las actividades"}
           </button>
         </div>
     </section>

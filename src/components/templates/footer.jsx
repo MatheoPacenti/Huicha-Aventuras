@@ -1,9 +1,6 @@
 import arbolesMarrones from "../../assets/img/arbolesMarrones.png";
 import logoHuicha from "../../assets/img/logo-huicha-con-aventura-transparente.png";
 import nubes from "../../assets/img/nubes.png";
-import facebook from "../../assets/img/svg-redes/facebook.svg";
-import instagram from "../../assets/img/svg-redes/instagram.svg";
-import wpp from "../../assets/img/svg-redes/wpp.svg";
 import "./footer.css";
 
 function enviarWpp(e) {
@@ -20,33 +17,48 @@ export function Footer() {
       <div className="footer-container">
         <div className="contactanos">
           <span className="title">Contactanos</span>
+          <p className="seo-description">
+            Huicha Aventuras - Tu destino para actividades de aventura en Tandil, Buenos Aires. 
+            Paintball en Tandil, trekking en Tandil, arquería en Tandil, cocina rústica en Tandil y más. 
+            Packs especiales para cumpleaños de aventura en Tandil, egresados en Tandil y actividades familiares en Tandil.
+            Ubicados en Av. Estrada 2641, Tandil. Contactanos para más información sobre nuestras actividades de aventura.
+          </p>
           <p className="dato">
             <a href="tel:+542494381198" className="link-plano">
               +54 2494 38 1198
             </a>
           </p>
           <p className="dato">
-            <a href="mailto:loremipsum@gmail.com" className="link-plano">
-              lorem ipsum@gmail.com
+            <a href="mailto:info@huichaaventuras.com" className="link-plano">
+              info@huichaaventuras.com
             </a>
           </p>
           <div className="svg-redes">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <img className="facebook" src={facebook} alt="facebook" />
+              <svg className="facebook" width="42" height="43" viewBox="0 0 784 804" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M392 0.00101618C176.4 0.00101618 0 181.224 0 404.423C0 606.23 143.472 773.73 330.848 804.001V521.471H231.28V404.423H330.848V315.224C330.848 213.916 389.256 158.218 479.023 158.218C521.751 158.218 566.439 165.886 566.439 165.886V265.579H517.047C468.439 265.579 453.151 296.657 453.151 328.544V404.423H562.127L544.487 521.471H453.151V804.001C545.522 788.978 629.637 740.452 690.307 667.176C750.977 593.904 784.211 500.709 783.999 404.423C783.999 181.224 607.599 0.00101618 392 0.00101618Z" fill="currentColor"/>
+              </svg>
             </a>
             <a href="https://www.instagram.com/huicha.aventuras?igsh=cW1jZDFvNzRic245" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <img className="instagram" src={instagram} alt="instagram" />
+              <svg className="instagram" width="42" height="47" viewBox="0 0 1285 1339" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M642.986 1034.61C836.391 1034.61 993.177 871.127 993.177 669.458C993.177 467.788 836.391 304.302 642.986 304.302C449.581 304.302 292.795 467.788 292.795 669.458C292.795 871.127 449.581 1034.61 642.986 1034.61ZM642.986 912.894C771.921 912.894 876.447 803.902 876.447 669.458C876.447 535.011 771.921 426.021 642.986 426.021C514.049 426.021 409.525 535.011 409.525 669.458C409.525 803.902 514.049 912.894 642.986 912.894Z" fill="currentColor"/>
+                <path d="M993.185 243.443C960.95 243.443 934.82 270.691 934.82 304.303C934.82 337.914 960.95 365.162 993.185 365.162C1025.42 365.162 1051.55 337.914 1051.55 304.303C1051.55 270.691 1025.42 243.443 993.185 243.443Z" fill="currentColor"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M39.1331 199.378C0.9646 277.489 0.9646 379.743 0.9646 584.248V754.654C0.9646 959.159 0.9646 1061.41 39.1331 1139.52C72.7072 1208.23 126.279 1264.09 192.173 1299.1C267.083 1338.9 365.146 1338.9 561.271 1338.9H724.694C920.818 1338.9 1018.88 1338.9 1093.79 1299.1C1159.68 1264.09 1213.26 1208.23 1246.83 1139.52C1285 1061.41 1285 959.159 1285 754.654V584.248C1285 379.743 1285 277.489 1246.83 199.378C1213.26 130.67 1159.68 74.8081 1093.79 39.7995C1018.88 0 920.818 0 724.694 0H561.271C365.146 0 267.083 0 192.173 39.7995C126.279 74.8081 72.7072 130.67 39.1331 199.378ZM724.694 121.718H561.271C461.282 121.718 393.31 121.813 340.772 126.289C289.595 130.649 263.424 138.551 245.167 148.251C201.239 171.591 165.524 208.832 143.141 254.637C133.838 273.674 126.26 300.963 122.078 354.327C117.786 409.111 117.695 479.987 117.695 584.248V754.654C117.695 858.918 117.786 929.789 122.078 984.574C126.26 1037.94 133.838 1065.23 143.141 1084.27C165.524 1130.07 201.239 1167.31 245.167 1190.65C263.424 1200.35 289.595 1208.26 340.772 1212.61C393.31 1217.09 461.282 1217.18 561.271 1217.18H724.694C824.685 1217.18 892.651 1217.09 945.192 1212.61C996.372 1208.26 1022.54 1200.35 1040.8 1190.65C1084.73 1167.31 1120.44 1130.07 1142.82 1084.27C1152.13 1065.23 1159.71 1037.94 1163.89 984.574C1168.18 929.789 1168.27 858.918 1168.27 754.654V584.248C1168.27 479.987 1168.18 409.111 1163.89 354.327C1159.71 300.963 1152.13 273.674 1142.82 254.637C1120.44 208.832 1084.73 171.591 1040.8 148.251C1022.54 138.551 996.372 130.649 945.192 126.289C892.651 121.813 824.685 121.718 724.694 121.718Z" fill="currentColor"/>
+              </svg>
             </a>
             <a href="#" onClick={enviarWpp} aria-label="WhatsApp">
-              <img className="wpp" src={wpp} alt="whatsapp" />
+              <svg className="wpp" width="45" height="45" viewBox="0 0 1403 1403" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1001.39 832.154C984.731 824.263 904.935 784.803 890.028 778.665C875.121 772.527 864.599 770.773 853.199 787.434C841.8 804.094 811.109 840.046 801.464 851.446C791.818 862.845 783.049 863.722 766.389 851.446C718.536 832.242 674.34 804.953 635.734 770.773C600.787 737.87 571.2 699.703 548.047 657.656C538.401 641.873 548.047 633.104 555.062 624.335C562.077 615.566 570.846 605.921 579.614 596.275C586.027 587.933 591.332 578.796 595.398 569.092C597.573 564.579 598.703 559.633 598.703 554.623C598.703 549.613 597.573 544.668 595.398 540.155C595.398 532.263 558.569 452.468 544.539 420.023C530.509 387.579 518.233 391.963 508.587 391.963H473.512C456.804 392.615 441.036 399.868 429.669 412.131C411.321 429.64 396.787 450.75 386.98 474.138C377.172 497.526 372.301 522.688 372.672 548.047C377.157 610.303 400.048 669.821 438.437 719.038C508.883 823.687 605.26 908.281 718.161 964.563C756.743 981.223 786.557 990.869 810.232 998.761C843.479 1008.81 878.62 1010.91 912.827 1004.9C935.546 1000.29 957.076 991.062 976.082 977.788C995.088 964.514 1011.16 947.477 1023.31 927.734C1033.42 903.352 1036.76 876.69 1032.96 850.569C1028.57 844.431 1018.05 840.046 1001.39 832.154Z" fill="currentColor"/>
+                <path d="M1165.37 235.003C1104.72 173.786 1032.44 125.334 952.769 92.5028C873.101 59.6716 787.665 43.1267 701.5 43.8438C587.357 44.4411 475.368 74.9756 376.718 132.398C278.068 189.82 196.211 272.12 139.321 371.077C82.4316 470.035 52.5011 582.187 52.519 696.332C52.5368 810.477 82.5025 922.619 139.423 1021.56L51.7356 1359.16L397.224 1271.47C492.737 1323.44 599.778 1350.58 708.515 1350.39H701.5C831.095 1351.23 958.005 1313.46 1066.05 1241.89C1174.09 1170.31 1258.36 1068.19 1308.13 948.524C1357.89 828.862 1370.89 697.09 1345.47 570.011C1320.04 442.932 1257.34 326.305 1165.37 235.003ZM701.5 1238.15C604.215 1238.22 508.739 1211.86 425.284 1161.86L405.993 1150.46L200.804 1203.95L255.171 1004.02L242.894 983.854C172.863 871.073 146.667 736.509 169.276 605.694C191.885 474.879 261.727 356.913 365.549 274.18C469.371 191.447 599.95 149.702 732.512 156.866C865.073 164.03 990.393 219.604 1084.69 313.044C1135.25 363.192 1175.32 422.9 1202.57 488.689C1229.82 554.477 1243.7 625.031 1243.41 696.239C1243.18 839.891 1186.01 977.593 1084.43 1079.17C982.854 1180.75 845.152 1237.92 701.5 1238.15Z" fill="currentColor"/>
+              </svg>
             </a>
           </div>
         </div>
       </div>
       <div className="huicha-aventuras">
-        <img className="logo-huicha" src={logoHuicha} alt="logo Huicha aventuras" />
-        <img className="arboles-marrones" src={arbolesMarrones} alt="arboles marrones" />
-        <img className="nubes" src={nubes} alt="nubes" />
+        <img className="logo-huicha" src={logoHuicha} alt="Logo de Huicha Aventuras - Actividades de aventura en Tandil" loading="lazy" />
+        <img className="arboles-marrones" src={arbolesMarrones} alt="Árboles marrones decorativos en el paisaje natural" loading="lazy" />
+        <img className="nubes" src={nubes} alt="Nubes decorativas en el cielo" loading="lazy" />
       </div>
     </footer>
   );

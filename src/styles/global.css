@@ -36,13 +36,13 @@ body {
 
 
 .background-activities {
-  background-image: url('/src/assets/img/backgound-cards-activities.png');
+  background-image: url('/src/assets/img/backgrounds/backgound-cards-activities.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
 }
 .background-planes {
-  background-image: url('/src/assets/img/background-planes.png');
+  background-image: url('/src/assets/img/backgrounds/background-planes.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
@@ -95,7 +95,7 @@ body {
 
 @media (min-width: 1280px) {
 .background-activities {
-  background-image: url('/src/assets/img/nuestras-actividades-background-stroke.png');
+  background-image: url('/src/assets/img/backgrounds/nuestras-actividades-background-stroke.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
@@ -118,11 +118,12 @@ body {
   }
 
   .background-planes {
-  background-image: url('/src/assets/img/background-planes-stroke.png');
+  background-image: url('/src/assets/img/backgrounds/background-planes-stroke.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top left;
-  height: 416px;
+  height: 496px;
+  width: 494px;
 }
 
 

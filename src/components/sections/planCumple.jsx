@@ -15,7 +15,7 @@ function PlanCumple() {
       <h3 className="title name-plane">Tu cumpleaños en Huicha</h3>
         <img className='banderin-dos' src={banderinDos} alt="" />
 
-<p className="text">¡Celebra el cumpleaños de tus pequeños con Huicha Aventura y convierte su día especial en una experiencia inolvidable! Edad máxima 13 años En Huicha Aventura, transformamos cada celebración en una aventura emocionante y única. Diseñamos fiestas para niños de hasta 13 años con actividades que garantizan diversión, emoción y recuerdos inolvidables.</p>
+<p className="text">¡Celebra cumpleaños de aventura en Tandil con Huicha Aventuras! Fiestas de cumpleaños temáticas en Tandil para niños hasta 13 años. Transformamos cada celebración en una aventura emocionante con actividades que garantizan diversión y recuerdos inolvidables en Tandil.</p>
 <div className='container-actividades'>
   <img className='tiroArco' src={tiroArco} alt="" />
   <p className='text extra-bold'>2 Actividades</p>

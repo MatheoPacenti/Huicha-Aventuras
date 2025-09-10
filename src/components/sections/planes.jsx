@@ -7,9 +7,9 @@ function Planes() {
   return (
     <section className="planes-container">
 
-      <PlanCumple  />
       <PlanEgresados  />
       <PlanFamilia />
+      <PlanCumple  />
     </section>
   );
 }

@@ -1,0 +1,41 @@
+# Robots.txt para Huicha Aventuras
+# https://huichaaventuras.com
+
+# Permitir rastreo a todos los bots
+User-agent: *
+
+# Permitir acceso a todas las páginas principales
+Allow: /
+
+# Bloquear archivos innecesarios para SEO
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /vite.config.js
+Disallow: /eslint.config.js
+
+# Bloquear archivos de desarrollo
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /dist/
+Disallow: /build/
+
+# Bloquear archivos temporales
+Disallow: /*.tmp$
+Disallow: /*.log$
+Disallow: /temp/
+
+# Permitir acceso a imágenes importantes
+Allow: /src/assets/img/
+Allow: /public/
+
+# Ubicación del sitemap
+Sitemap: https://huichaaventuras.com/sitemap.xml
+
+# Información adicional
+# Contacto: info@huichaaventuras.com
+# Sitio: Huicha Aventuras - Actividades de aventura en Tandil

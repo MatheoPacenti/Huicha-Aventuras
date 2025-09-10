@@ -12,14 +12,16 @@
   background-color:#D97C0F;
   border-radius: 8px;
   cursor: pointer;
-    display: flex;          
+  display: flex;          
   align-items: center;      
   justify-content: center;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .ver-mas-btn:hover {
   opacity: 0.9;
+  transform: scale(1.05);
 }
 
 @media (min-width: 1280px) {
@@ -31,6 +33,11 @@
     padding: 0px 100px 0px 100px;
     justify-content: center;
     gap: 35px 0px;
+  }
+
+  .background > :first-child {
+    grid-column: 1; /* aparece en la columna izquierda */
+    justify-self: end; /* centrado hacia la derecha dentro de la columna */
   }
   /* 🔹 Si hay un número impar de cards, la última ocupa el centro */
   .background > :last-child:nth-child(odd) {

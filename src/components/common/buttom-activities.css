@@ -8,6 +8,12 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.activity-button:hover {
+    transform: scale(1.1);
 }
 .arqueria, .trekking{
     padding: 0px 10px;
@@ -15,8 +21,8 @@
 .btn-activity{
     text-decoration: none;
 }
-.juegos-de-orientacion .activity-button{
-    padding: 0px 7px;
+.btn-activity .juegos-de-orientacion{
+    padding: 0px 6px;
 }
     .activity-icon{
         height: 20px;
@@ -24,6 +30,9 @@
     }
 
 @media (min-width: 1280px) {
+    .btn-activity .juegos-de-orientacion{
+        padding: 0px 19px;
+    }
     .activity-button {
         padding: 0px 16px;
 
@@ -40,6 +49,10 @@
     .activity-button {
     width: 189px;
     height: 60px;
+    }
+
+    .activity-button:hover {
+        transform: scale(1.05);
     }
 
     .activity-icon{

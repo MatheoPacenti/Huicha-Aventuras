@@ -36,6 +36,12 @@ Pasa el día con tu familia de una forma diferente, estimulante y divertida.
             <p className="text">Duración: 5hs de entretenimiento.</p>
           </div>
         </div>
+
+        {/* Contenido SEO resumido */}
+        <p className="text seo-content">
+          Actividades familiares en Tandil y paquetes familiares en Tandil. 
+          Aventura en familia en Tandil,
+        </p>
       </div>
     </section>
   );

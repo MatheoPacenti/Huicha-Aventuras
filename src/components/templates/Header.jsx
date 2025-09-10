@@ -7,6 +7,7 @@ import "./Header.css";
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 useEffect(() => {
   if (isOpen) {
     document.body.style.overflow = "hidden"; // Bloquea scroll
@@ -19,6 +20,20 @@ useEffect(() => {
   };
 }, [isOpen]);
 
+// useEffect para manejar el scroll
+useEffect(() => {
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    setIsScrolled(scrollTop > 50); // Cambia a negro transparente después de 50px de scroll
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
   const boxClass = !hasInteracted ? 'box' : isOpen ? "box open" : "box reverse";
   const showMenu = !hasInteracted ? 'menu' : isOpen ? 'menu-show' : 'menu-hidden';
 
@@ -30,40 +45,70 @@ useEffect(() => {
 const scrollToSection = (sectionId) => {
   const el = document.getElementById(sectionId);
   if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
+    const headerHeight = 80; // Altura del header normal
+    const elementPosition = el.offsetTop;
+    const offsetPosition = elementPosition - headerHeight - 20; // 20px extra de margen
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
     setIsOpen(false); // Cierra el menú
   }
 };
   return (
     
-    <header className="header">
+    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__container main-container">
-        <a href=""><img
-          className="header__logo"
-          src={logoSinLetras}
-          alt="Logo de Huicha Cura"
-          /></a>
-        <div className={`${boxClass}`} onClick={menuHamburguesa}>
+        <a href="/" aria-label="Ir al inicio">
+          <img
+            className="header__logo"
+            src={logoSinLetras}
+            alt="Logo de Huicha Aventuras - Actividades de aventura en Tandil"
+          />
+        </a>
+        <button 
+          className={`${boxClass}`} 
+          onClick={menuHamburguesa}
+          aria-label="Abrir menú de navegación"
+          aria-expanded={isOpen}
+        >
           <div className="rectangle r1"></div>
           <div className="rectangle r2"></div>
           <div className="rectangle r3"></div>
-        </div>
+        </button>
      {isOpen && (
           <div className="menu-overlay" onClick={menuHamburguesa}></div>
         )}
       <nav className= {`${showMenu}`}>
 <ul className="desplegable">
-  <li className="li-menu" onClick={() => scrollToSection("nuestras-actividades-section")}>
+  <li
+    className="li-menu"
+    onClick={() => scrollToSection("nuestras-actividades-section")}
+    tabIndex={0}
+    role="button"
+  >
     <span className="text">Nuestras Actividades</span>
   </li>
-  <li className="li-menu" onClick={() => scrollToSection("nuestras-actividades-section")}>
-    <span className="text">Quienes somos</span>
-  </li>
-  <li className="li-menu" onClick={() => scrollToSection("nuestras-actividades-section")}>
+
+  <li
+    className="li-menu"
+    onClick={() => scrollToSection("nuestras-actividades-section")}
+    tabIndex={0}
+    role="button"
+  >
     <span className="text">Propuestas</span>
   </li>
-<li
-  className="li-menu"
+  <li
+    className="li-menu"
+    onClick={() => scrollToSection("faq-section")}
+    tabIndex={0}
+    role="button"
+  >
+    <span className="text">Preguntas Frecuentes</span>
+  </li>
+  <li
+    className="li-menu"
   onClick={() => {
     scrollToSection("footer");
     const wppIcon = document.querySelector(".wpp");

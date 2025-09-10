@@ -14,6 +14,27 @@
   background-color: var(--color-principal);
   font-family: var(--fuente-principal);
   z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.header--scrolled {
+  background-color: rgba(32, 32, 32, 0.8);
+  backdrop-filter: blur(10px);
+  height: 60px;
+}
+
+.header--scrolled .header__container {
+  padding: 0 1rem;
+}
+
+.header--scrolled .header__logo {
+  height: 40px;
+}
+
+.header--scrolled .menu,
+.header--scrolled .menu-show,
+.header--scrolled .menu-hidden {
+  top: 60px;
 }
 
 .header ul , li {
@@ -49,6 +70,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.box:focus,
+.box:active,
+.box:hover {
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .rectangle {
@@ -274,12 +307,18 @@
 }
 
 
-.desplegable .li-menu{
+.desplegable .li-menu {
   width: 100%;
   height: 46px;
   display: flex;
-  align-items: center;  
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.desplegable .li-menu:hover {
+  transform: scale(1.07);
 }
 .menu,
 .menu-show,

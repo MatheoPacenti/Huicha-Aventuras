@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+.hero-title {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* H1 oculto para SEO pero accesible para lectores de pantalla */
+}
+
 .hero-container {
   position: relative;
   height: 305px;

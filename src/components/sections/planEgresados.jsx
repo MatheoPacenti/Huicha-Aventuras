@@ -36,6 +36,12 @@ function PlanEgresados() {
           </div>
 
         </div>
+
+        {/* Contenido SEO resumido */}
+        <p className="text seo-content">
+          Paquetes para egresados en Tandil y excursiones escolares en Tandil. 
+          Actividades de aventura para colegios y escuelas en Tandil, Buenos Aires.
+        </p>
         
       </div>
     </section>

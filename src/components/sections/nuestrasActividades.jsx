@@ -63,7 +63,7 @@ function NuestrasActividades() {
   return (
     <section id="nuestras-actividades-section" className="nuestras-actividades-section">
       <div className="nuestras-actividades-container">
-        <h1 className="company-name">Huicha Aventuras</h1>
+        <h2 className="company-name">Huicha Aventuras</h2>
         <h2 className="Text-bienvenidos">
           ¡Bienvenidos a nuestras actividades de aventura en Tandil!
         </h2>
@@ -84,27 +84,28 @@ function NuestrasActividades() {
         <img
           className="flech-carrusel"
           src={flechLeft}
-          alt="anterior"
+          alt="Flecha para ver actividad anterior"
           onClick={handlePrev}
         />
         <img
           className={`img-carrusel ${isFading ? "fade" : ""}`}
           src={carrusel[currentIndex]}
-          alt="actividad actual"
+          alt={`Imagen de ${activities[currentIndex]?.label || 'actividad'} en Huicha Aventuras`}
+          loading="lazy"
         />
         <img
           className="flech-carrusel"
           src={flechRight}
-          alt="siguiente"
+          alt="Flecha para ver siguiente actividad"
           onClick={handleNext}
         />
       </div>
-        <img className="logoSinLetras" src={logoSinLetras} alt="Logo Huicha cura" />
+        <img className="logoSinLetras" src={logoSinLetras} alt="Logo de Huicha Aventuras" />
 
       <p className="info-company">
-        ¿Buscas diversión al aire libre y momentos inolvidables? En Huicha Aventuras,
-        ofrecemos una variedad de actividades emocionantes para todos. Contamos con
-        packs especiales para eventos únicos.
+        ¿Buscas diversión al aire libre y momentos inolvidables en Tandil? En Huicha Aventuras,
+        ofrecemos una variedad de actividades de aventura emocionantes para todos. Contamos con
+        packs especiales para eventos únicos: cumpleaños de aventura, viajes de egresados y excursiones familiares.
       </p>
 
       <div className="event-list">
@@ -114,15 +115,57 @@ function NuestrasActividades() {
       </div>
 
       <p className="info-company">
-        Nuestros packs están diseñados para hacer de tu evento una experiencia
-        memorable y llena de diversión. ¡Te invitamos a descubrir todo lo que
-        Huicha Aventuras tiene para ofrecerte!
+        Nuestros packs de aventura están diseñados para hacer de tu evento una experiencia
+        memorable y llena de diversión en Tandil. Desde paintball y trekking hasta arquería y cocina rústica,
+        tenemos actividades perfectas para grupos de todas las edades. ¡Te invitamos a descubrir todo lo que
+        Huicha Aventuras tiene para ofrecerte en el corazón de la naturaleza!
+      </p>
+
+      <p className="info-company seo-content">
+        En Huicha Aventuras, ubicados en Tandil, Buenos Aires, ofrecemos las mejores actividades de aventura 
+        al aire libre de la región. Nuestro complejo cuenta con instalaciones especialmente diseñadas para 
+        paintball, trekking por senderos naturales, tiro con arco profesional, y experiencias de cocina rústica 
+        en un entorno natural único. Somos el destino preferido para cumpleaños de aventura, viajes de egresados 
+        y excursiones familiares en Tandil.
+      </p>
+
+      <p className="info-company seo-content">
+        Nuestras actividades de aventura en Tandil incluyen paintball táctico, trekking por las sierras de Tandil, 
+        arquería tradicional y guerra con arco, juegos de orientación con brújula y mapas, footgolf en canchas 
+        naturales, y cocina rústica al aire libre. Cada actividad está supervisada por instructores certificados 
+        y equipada con materiales de primera calidad. Perfecto para grupos escolares, empresas, familias y 
+        celebraciones especiales en Tandil.
       </p>
 
       </div>
+
+      {/* Contenido SEO oculto para más palabras clave */}
+      <div className="seo-hidden-content">
+        <h3>Actividades de aventura en Tandil - Huicha Aventuras</h3>
+        <p>
+          Huicha Aventuras es el complejo de actividades de aventura más completo de Tandil, Buenos Aires. 
+          Ofrecemos paintball en Tandil, trekking en las sierras de Tandil, arquería en Tandil, y cocina rústica 
+          en Tandil. Nuestras instalaciones están ubicadas en Av. Estrada 2641, Tandil, y contamos con más de 
+          6 actividades diferentes para todas las edades. Somos especialistas en cumpleaños de aventura en Tandil, 
+          viajes de egresados en Tandil, y excursiones escolares en Tandil.
+        </p>
+        <p>
+          Nuestras actividades incluyen: paintball táctico en Tandil, trekking por senderos naturales de Tandil, 
+          tiro con arco en Tandil, guerra con arco en Tandil, juegos de orientación en Tandil, footgolf en Tandil, 
+          y cocina rústica al aire libre en Tandil. Cada actividad está diseñada para grupos de diferentes tamaños 
+          y edades, desde niños hasta adultos. Contamos con instructores certificados y equipamiento de primera calidad.
+        </p>
+        <p>
+          Huicha Aventuras es el destino perfecto para eventos corporativos en Tandil, cumpleaños temáticos en Tandil, 
+          despedidas de soltero en Tandil, y actividades de team building en Tandil. Nuestro complejo está abierto 
+          todos los días y ofrecemos paquetes especiales para grupos grandes. Contactanos al +54 2494 38 1198 para 
+          más información sobre nuestras actividades de aventura en Tandil.
+        </p>
+      </div>
+
 <div className="arboles">
-  <img className="arbol arbol-izquierda" src={arbolesMarrones} alt="árbol marrón" />
-  <img className="arbol arbol-derecha" src={arbolesMarrones} alt="árbol marrón" />
+  <img className="arbol arbol-izquierda" src={arbolesMarrones} alt="Árbol marrón decorativo en el paisaje de Huicha Aventuras" loading="lazy" />
+  <img className="arbol arbol-derecha" src={arbolesMarrones} alt="Árbol marrón decorativo en el paisaje de Huicha Aventuras" loading="lazy" />
 </div>
     </section>
     

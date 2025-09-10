@@ -65,8 +65,12 @@
   padding: 0;
 }
 
+.familia-section .seo-content{
+  margin-top: 52px;
+}
+
 @media (min-width: 1280px) {
 .familia-section{
-    width: 721px;
+  width: 494px;
 }
 }

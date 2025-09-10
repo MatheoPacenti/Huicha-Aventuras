@@ -1,16 +1,22 @@
 .planes-container{
-      display: flex;
-  flex-direction: column;
-  gap: 35px;
-  align-items: center;    /* centra elementos en móvil */
+      display: grid;
+  row-gap: 35px;
+  column-gap: 0px;
+  align-items: center;
+  justify-content: center;
 }
 /* Desktop: ≥1280px */
 @media (min-width: 1280px) {
   .planes-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    gap: 30px;
     justify-content: center; /* centra el grid */
+  }
+
+
+  .planes-container > :first-child {
+    grid-column: 1; /* aparece en la columna izquierda */
+    justify-self: end; /* centrado hacia la derecha dentro de la columna */
   }
 
   /* Si hay un número impar de planes, el último ocupa toda la fila y se centra */
@@ -19,3 +25,4 @@
     justify-self: center; /* lo centra */
   }
 }
+  

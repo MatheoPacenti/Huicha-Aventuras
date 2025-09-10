@@ -1,10 +1,141 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/src/assets/img/logo-sin-letas.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huicha Aventuras</title>
+    <meta name="theme-color" content="#786658" />
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/src/assets/img/logo-huicha-con-aventura-transparente.png" />
+    <link rel="preload" as="image" href="/src/assets/img/tiro-arco.png" />
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://huichaaventuras.com/" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Huicha Aventuras - Actividades de Aventura en Tandil | Paintball, Trekking, Arquería</title>
+    <meta name="description" content="Descubre Huicha Aventuras en Tandil. Actividades emocionantes: paintball, trekking, arquería, cocina rústica. Packs para cumpleaños, egresados y familias. ¡Vive la aventura!" />
+    <meta name="keywords" content="aventuras tandil, paintball tandil, trekking tandil, arquería tandil, actividades al aire libre, cumpleaños aventura, egresados tandil, huicha aventuras" />
+    <meta name="author" content="Huicha Aventuras" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://huichaaventuras.com/" />
+    <meta property="og:title" content="Huicha Aventuras - Actividades de Aventura en Tandil" />
+    <meta property="og:description" content="Descubre Huicha Aventuras en Tandil. Actividades emocionantes: paintball, trekking, arquería, cocina rústica. Packs para cumpleaños, egresados y familias." />
+    <meta property="og:image" content="/src/assets/img/logo-huicha-con-aventura-transparente.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://huichaaventuras.com/" />
+    <meta property="twitter:title" content="Huicha Aventuras - Actividades de Aventura en Tandil" />
+    <meta property="twitter:description" content="Descubre Huicha Aventuras en Tandil. Actividades emocionantes: paintball, trekking, arquería, cocina rústica. Packs para cumpleaños, egresados y familias." />
+    <meta property="twitter:image" content="/src/assets/img/logo-huicha-con-aventura-transparente.png" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="AR-B" />
+    <meta name="geo.placename" content="Tandil" />
+    <meta name="geo.position" content="-37.3282;-59.1369" />
+    <meta name="ICBM" content="-37.3282, -59.1369" />
+    
+    <!-- Schema Markup -->
+     <!-- Agregar Precios, mail, horarios, y direccion esta en huicha cura-->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Huicha Aventuras",
+      "description": "Actividades de aventura en Tandil: paintball, trekking, arquería, cocina rústica, juegos de orientación y footgolf. Packs especiales para cumpleaños, egresados y familias.",
+      "url": "https://huichaaventuras.com",
+      "telephone": "+54-2494-38-1198",
+      "email": "info@huichaaventuras.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Estrada 2641",
+        "addressLocality": "Tandil",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "B7000",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-37.3282",
+        "longitude": "-59.1369"
+      },
+      "openingHours": "Mo-Su 09:00-18:00",
+      "priceRange": "$$",
+      "currenciesAccepted": "ARS",
+      "paymentAccepted": "Cash, Credit Card",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Actividades de Aventura",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Paintball",
+              "description": "Batallas tácticas con balas de pintura en equipo"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trekking",
+              "description": "Caminatas por senderos naturales de Tandil"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Arquería",
+              "description": "Tiro con arco y guerra con arco"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cocina Rústica",
+              "description": "Cocina al aire libre con ingredientes frescos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Juegos de Orientación",
+              "description": "Navegación con brújula y mapas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Footgolf",
+              "description": "Combinación de fútbol y golf"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/huicha.aventuras",
+        "https://facebook.com/huichaaventuras",
+        "https://maps.app.goo.gl/kHeg481JPkShTqLm7"
+      ],
+      "image": "/src/assets/img/logo-huicha-con-aventura-transparente.png",
+      "logo": "/src/assets/img/logo-sin-letas.png"
+    }
+    </script>
+
+    
   </head>
   <body>
     <div id="root"></div>
