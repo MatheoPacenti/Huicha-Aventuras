@@ -8,19 +8,20 @@ import Planes from './components/sections/planes';
 import FAQ from './components/sections/faq';
 import Footer from './components/templates/footer';
 import Header from './components/templates/Header';
-//soy salame e importo todo mal
 
 function App() {
   return (
-    <div className="app-container">
+    <>
       <Header />
-      <Hero />
-      <NuestrasActividades />
-      <Actividades />
-      <Planes />
-      <FAQ />
+      <main className='app-container'>
+        <Hero />
+        <NuestrasActividades />
+        <Actividades />
+        <Planes />
+        <FAQ />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

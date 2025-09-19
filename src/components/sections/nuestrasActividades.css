@@ -189,14 +189,4 @@
  top: 290px;
   right: 84px;
 }
-
-/* Contenido SEO oculto */
-.seo-hidden-content {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  /* Contenido SEO oculto para motores de búsqueda pero accesible */
-}
 }

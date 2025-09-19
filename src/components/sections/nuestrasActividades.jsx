@@ -139,30 +139,6 @@ function NuestrasActividades() {
 
       </div>
 
-      {/* Contenido SEO oculto para más palabras clave */}
-      <div className="seo-hidden-content">
-        <h3>Actividades de aventura en Tandil - Huicha Aventuras</h3>
-        <p>
-          Huicha Aventuras es el complejo de actividades de aventura más completo de Tandil, Buenos Aires. 
-          Ofrecemos paintball en Tandil, trekking en las sierras de Tandil, arquería en Tandil, y cocina rústica 
-          en Tandil. Nuestras instalaciones están ubicadas en Av. Estrada 2641, Tandil, y contamos con más de 
-          6 actividades diferentes para todas las edades. Somos especialistas en cumpleaños de aventura en Tandil, 
-          viajes de egresados en Tandil, y excursiones escolares en Tandil.
-        </p>
-        <p>
-          Nuestras actividades incluyen: paintball táctico en Tandil, trekking por senderos naturales de Tandil, 
-          tiro con arco en Tandil, guerra con arco en Tandil, juegos de orientación en Tandil, footgolf en Tandil, 
-          y cocina rústica al aire libre en Tandil. Cada actividad está diseñada para grupos de diferentes tamaños 
-          y edades, desde niños hasta adultos. Contamos con instructores certificados y equipamiento de primera calidad.
-        </p>
-        <p>
-          Huicha Aventuras es el destino perfecto para eventos corporativos en Tandil, cumpleaños temáticos en Tandil, 
-          despedidas de soltero en Tandil, y actividades de team building en Tandil. Nuestro complejo está abierto 
-          todos los días y ofrecemos paquetes especiales para grupos grandes. Contactanos al +54 2494 38 1198 para 
-          más información sobre nuestras actividades de aventura en Tandil.
-        </p>
-      </div>
-
 <div className="arboles">
   <img className="arbol arbol-izquierda" src={arbolesMarrones} alt="Árbol marrón decorativo en el paisaje de Huicha Aventuras" loading="lazy" />
   <img className="arbol arbol-derecha" src={arbolesMarrones} alt="Árbol marrón decorativo en el paisaje de Huicha Aventuras" loading="lazy" />

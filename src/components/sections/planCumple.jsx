@@ -9,17 +9,17 @@ import "./planCumple.css";
 function PlanCumple() {
 
   return (
-    <section className="main-container cumple background-planes">
+    <article className="main-container cumple background-planes">
       <div className="cumple-container">
-        <img className='banderin-uno' src={banderines} alt="" />
-      <h3 className="title name-plane">Tu cumpleaños en Huicha</h3>
-        <img className='banderin-dos' src={banderinDos} alt="" />
+        <img className='banderin-uno' src={banderines} alt="banderin decorativo" loading="lazy" />
+      <h3 className="title name-plane">Tu Cumpleaños en Huicha</h3>
+        <img className='banderin-dos' src={banderinDos} alt="banderin decorativo" loading="lazy" />
 
 <p className="text">¡Celebra cumpleaños de aventura en Tandil con Huicha Aventuras! Fiestas de cumpleaños temáticas en Tandil para niños hasta 13 años. Transformamos cada celebración en una aventura emocionante con actividades que garantizan diversión y recuerdos inolvidables en Tandil.</p>
 <div className='container-actividades'>
-  <img className='tiroArco' src={tiroArco} alt="" />
+  <img className='tiroArco' src={tiroArco} alt="Niño practicando tiro con arco en una fiesta de cumpleaños" loading="lazy" />
   <p className='text extra-bold'>2 Actividades</p>
-    <img src={blanco} alt="" />
+    <img src={blanco} alt="Decoración de cumpleaños" loading="lazy" />
 </div>
 <p className='text'>
   <span className='texto-principal'>
@@ -30,7 +30,7 @@ function PlanCumple() {
   </span>
 </p>
         </div>
-    </section>
+    </article>
   );
 }
 

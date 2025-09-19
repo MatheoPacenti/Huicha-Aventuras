@@ -1,20 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
-import { activities } from "../../components/data/activities.js";
+import { activities, formatId } from "../../components/data/activities.js";
 import CardActivities from "../common/card-activities";
 import "./actividades.css";
 
 function Actividades() {
   const [showAll, setShowAll] = useState(false);
   const [selectedSlug, setSelectedSlug] = useState(null);
-
-  // Misma regla que usás en BtnActivities
-  const slugify = (s) =>
-    s
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
-
+  
+  const slugify = (label) => formatId(label).replace("actividad-", "");
   // Slugs en el mismo orden que activities
   const slugs = useMemo(() => activities.map((a) => slugify(a.label)), []);
 

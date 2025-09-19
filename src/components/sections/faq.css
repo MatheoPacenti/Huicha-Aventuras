@@ -49,16 +49,6 @@
   margin: 0;
 }
 
-/* Contenido SEO oculto */
-.seo-hidden-content {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  /* Contenido SEO oculto para motores de búsqueda pero accesible */
-}
-
 /* Responsive */
 @media (min-width: 768px) {
   .faq-section {

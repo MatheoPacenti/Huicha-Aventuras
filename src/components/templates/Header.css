@@ -335,6 +335,7 @@
   font-weight: 700;
   color: var(--variable-collection-naranjap);
   font-size: 16px;
+  text-decoration: none;
 }
 
 @keyframes fadeSlideDown {

@@ -42,6 +42,11 @@ useEffect(() => {
     setHasInteracted(true);
   };
 
+const handleNavClick = (e, sectionId) => {
+  e.preventDefault();
+  scrollToSection(sectionId);
+};
+
 const scrollToSection = (sectionId) => {
   const el = document.getElementById(sectionId);
   if (el) {
@@ -81,55 +86,41 @@ const scrollToSection = (sectionId) => {
           <div className="menu-overlay" onClick={menuHamburguesa}></div>
         )}
       <nav className= {`${showMenu}`}>
-<ul className="desplegable">
-  <li
-    className="li-menu"
-    onClick={() => scrollToSection("nuestras-actividades-section")}
-    tabIndex={0}
-    role="button"
-  >
-    <span className="text">Nuestras Actividades</span>
-  </li>
-
-  <li
-    className="li-menu"
-    onClick={() => scrollToSection("nuestras-actividades-section")}
-    tabIndex={0}
-    role="button"
-  >
-    <span className="text">Propuestas</span>
-  </li>
-  <li
-    className="li-menu"
-    onClick={() => scrollToSection("faq-section")}
-    tabIndex={0}
-    role="button"
-  >
-    <span className="text">Preguntas Frecuentes</span>
-  </li>
-  <li
-    className="li-menu"
-  onClick={() => {
-    scrollToSection("footer");
-    const wppIcon = document.querySelector(".wpp");
-    const contactSpan = document.querySelector(".contactanos .title");
-    if (wppIcon) {
-      wppIcon.classList.add("animate-growShrink");
-      setTimeout(() => {
-        wppIcon.classList.remove("animate-growShrink");
-      }, 700);
-    }
-    if (contactSpan) {
-      contactSpan.classList.add("animate-growShrink");
-      setTimeout(() => {
-        contactSpan.classList.remove("animate-growShrink");
-      }, 700);
-    }
-  }}
->
-  <span className="text">Contacto</span>
-</li>
-</ul>
+        <ul className="desplegable">
+          <li className="li-menu">
+            <a href="#nuestras-actividades-section" className="text" onClick={(e) => handleNavClick(e, "nuestras-actividades-section")}>
+              Nuestras Actividades
+            </a>
+          </li>
+          <li className="li-menu">
+            {/* Asegúrate de que tu componente <Planes /> tenga id="planes-section" */}
+            <a href="#planes-section" className="text" onClick={(e) => handleNavClick(e, "planes-section")}>
+              Propuestas
+            </a>
+          </li>
+          <li className="li-menu">
+            <a href="#faq-section" className="text" onClick={(e) => handleNavClick(e, "faq-section")}>
+              Preguntas Frecuentes
+            </a>
+          </li>
+          <li className="li-menu">
+            <a href="#footer" className="text" onClick={(e) => {
+              handleNavClick(e, "footer");
+              const wppIcon = document.querySelector(".wpp");
+              const contactSpan = document.querySelector(".contactanos .title");
+              if (wppIcon) {
+                wppIcon.classList.add("animate-growShrink");
+                setTimeout(() => wppIcon.classList.remove("animate-growShrink"), 700);
+              }
+              if (contactSpan) {
+                contactSpan.classList.add("animate-growShrink");
+                setTimeout(() => contactSpan.classList.remove("animate-growShrink"), 700);
+              }
+            }}>
+              Contacto
+            </a>
+          </li>
+        </ul>
       </nav>
         </div>
 

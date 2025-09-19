@@ -5,6 +5,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.planes-container{
+      margin: 10px 0 0 0;
+    font-family: var(--h1-lato-extrabold-font-family);
+    font-weight: var(--h1-lato-extrabold-font-weight);
+    color: var(--variable-collection-beigep);
+    font-size: var(--h1-lato-extrabold-font-size);
+    text-align: center;
+    letter-spacing: var(--h1-lato-extrabold-letter-spacing);
+    line-height: var(--h1-lato-extrabold-line-height);
+    font-style: var(--h1-lato-extrabold-font-style);
+}
 /* Desktop: ≥1280px */
 @media (min-width: 1280px) {
   .planes-container {
