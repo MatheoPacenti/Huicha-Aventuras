@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logoSinLetras from '../../assets/img/logo-sin-letas.png';
 import "../../styles/paleta-colores.css";
 import "./Header.css";
@@ -119,6 +120,11 @@ const scrollToSection = (sectionId) => {
             }}>
               Contacto
             </a>
+          </li>
+          <li className="li-menu">
+            <Link to="/admin/login" className="text" style={{ textDecoration: 'none' }}>
+              🔐 Admin
+            </Link>
           </li>
         </ul>
       </nav>

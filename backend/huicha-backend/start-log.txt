@@ -1,0 +1,351 @@
+
+> huicha-backend@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m14:21:27[0m] Starting compilation in watch mode...
+
+[[90m14:21:37[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 9232  - [39m20/03/2026, 14:21:40 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 9232  - [39m20/03/2026, 14:21:40 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +110ms[39m
+[31m[Nest] 9232  - [39m20/03/2026, 14:21:40 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39mUnknownDependenciesException [Error]: Nest can't resolve dependencies of the ActividadesService (ActividadeRepository, ?). Please make sure that the argument "CLOUDINARY" at index [1] is available in the ActividadesModule context.
+
+Potential solutions:
+- Is ActividadesModule a valid NestJS module?
+- If "CLOUDINARY" is a provider, is it part of the current ActividadesModule?
+- If "CLOUDINARY" is exported from a separate @Module, is that module imported within ActividadesModule?
+  @Module({
+    imports: [ /* the Module containing "CLOUDINARY" */ ]
+  })
+
+For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+    at Injector.lookupComponentInParentModules [90m(C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:290:19[90m)[39m
+    at async resolveParam [90m(C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:140:38[90m)[39m
+    at async Promise.all (index 1)
+    at async Injector.resolveConstructorParams [90m(C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:169:27[90m)[39m
+    at async Injector.loadInstance [90m(C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:75:13[90m)[39m
+    at async Injector.loadProvider [90m(C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\injector.js:103:9[90m)[39m
+    at async [90mC:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at async InstanceLoader.createInstancesOfProviders [90m(C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:55:9[90m)[39m
+    at async [90mC:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\[39mnode_modules\[4m@nestjs[24m\core\injector\instance-loader.js:40:13 {
+  type: [32m'ActividadesService'[39m,
+  context: {
+    index: [33m1[39m,
+    dependencies: [
+      [32m'ActividadeRepository'[39m,
+      [32m'CLOUDINARY'[39m
+    ],
+    name: [32m'CLOUDINARY'[39m
+  },
+  metadata: {
+    id: [32m'd6c59e49f22945043aaa8'[39m
+  },
+  moduleRef: {
+    id: [32m'91de680bc25d7e780844c'[39m
+  }
+}
+[2J[3J[H[[90m14:24:23[0m] File change detected. Starting incremental compilation...
+
+[[90m14:24:23[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:27 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +110ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:27 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCloudinaryModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +1113ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJornadasModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mActividadesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mJornadasController {/jornadas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mActividadesController {/actividades}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 6604  - [39m20/03/2026, 14:24:29 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+[31m[Nest] 6604  - [39m20/03/2026, 14:24:29 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::8000[39m[38;5;3m +4ms[39m
+node:net:1872
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at ExpressAdapter.listen (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at bootstrap (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v21.2.0
+[2J[3J[H[[90m14:26:05[0m] File change detected. Starting incremental compilation...
+
+[[90m14:26:05[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:08 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:08 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +104ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:08 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:08 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:08 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:08 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCloudinaryModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +187ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJornadasModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mActividadesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +4ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mJornadasController {/jornadas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mActividadesController {/actividades}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17628  - [39m20/03/2026, 14:26:09 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[31m[Nest] 17628  - [39m20/03/2026, 14:26:09 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::8000[39m[38;5;3m +3ms[39m
+node:net:1872
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at ExpressAdapter.listen (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at bootstrap (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v21.2.0
+[2J[3J[H[[90m14:38:54[0m] File change detected. Starting incremental compilation...
+
+[[90m14:38:56[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\dist\main'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v21.2.0
+[2J[3J[H[[90m14:38:58[0m] File change detected. Starting incremental compilation...
+
+[[90m14:38:58[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\dist\main'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v21.2.0
+[2J[3J[H[[90m14:39:02[0m] File change detected. Starting incremental compilation...
+
+[[90m14:39:03[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/cjs/loader:1147
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\dist\main'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v21.2.0
+[2J[3J[H[[90m14:44:26[0m] File change detected. Starting incremental compilation...
+
+[96msrc/actividades/actividades.service.ts[0m:[93m29[0m:[93m33[0m - [91merror[0m[90m TS2339: [0mProperty 'cloudinaryClient' does not exist on type 'ActividadesService'.
+
+[7m29[0m       const uploadStream = this.cloudinaryClient.uploader.upload_stream(
+[7m  [0m [91m                                ~~~~~~~~~~~~~~~~[0m
+
+[[90m14:44:27[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m14:44:30[0m] File change detected. Starting incremental compilation...
+
+[[90m14:44:30[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +162ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCloudinaryModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +284ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJornadasModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mActividadesModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +6ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mJornadasController {/jornadas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/jornadas/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mActividadesController {/actividades}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/actividades/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17404  - [39m20/03/2026, 14:44:35 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +6ms[39m
+[31m[Nest] 17404  - [39m20/03/2026, 14:44:35 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::8000[39m[38;5;3m +4ms[39m
+node:net:1872
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at ExpressAdapter.listen (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\core\nest-application.js:178:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at bootstrap (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\src\main.ts:7:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8000
+}
+
+Node.js v21.2.0
+[2J[3J[H[[90m14:44:35[0m] File change detected. Starting incremental compilation...
+
+ERROR: no se encontr¢ el proceso "6940".
+ERROR: no se encontr¢ el proceso "6940".
+node:child_process:965
+    throw err;
+    ^
+
+Error: Command failed: taskkill /pid 6940 /T /F
+ERROR: no se encontrï¿½ el proceso "6940".
+
+    at genericNodeError (node:internal/errors:956:15)
+    at wrappedFn (node:internal/errors:510:14)
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at treeKillSync (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\cli\lib\utils\tree-kill.js:7:38)
+    at C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\cli\actions\start.action.js:68:46
+    at Object.onWatchStatusChange (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\@nestjs\cli\lib\compiler\watch-compiler.js:83:17)
+    at C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\typescript\lib\typescript.js:133916:30
+    at emitFilesAndReportErrors (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\typescript\lib\typescript.js:133737:5)
+    at result.afterProgramCreate (C:\Users\mathe\OneDrive\Documentos\Huicha-Aventuras\backend\huicha-backend\node_modules\typescript\lib\typescript.js:133912:5) {
+  status: 128,
+  signal: null,
+  output: [
+    null,
+    Buffer(0) [Uint8Array] [],
+    Buffer(42) [Uint8Array] [
+       69,  82,  82,  79,  82,  58, 32, 110, 111,
+       32, 115, 101,  32, 101, 110, 99, 111, 110,
+      116, 114, 162,  32, 101, 108, 32, 112, 114,
+      111,  99, 101, 115, 111,  32, 34,  54,  57,
+       52,  48,  34,  46,  13,  10
+    ]
+  ],
+  pid: 4464,
+  stdout: Buffer(0) [Uint8Array] [],
+  stderr: Buffer(42) [Uint8Array] [
+     69,  82,  82,  79,  82,  58, 32, 110, 111,
+     32, 115, 101,  32, 101, 110, 99, 111, 110,
+    116, 114, 162,  32, 101, 108, 32, 112, 114,
+    111,  99, 101, 115, 111,  32, 34,  54,  57,
+     52,  48,  34,  46,  13,  10
+  ]
+}
+
+Node.js v21.2.0
